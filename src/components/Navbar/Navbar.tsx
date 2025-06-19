@@ -12,7 +12,7 @@ const Navbar = () => {
           <button>Projects</button>
         </li>
         <li
-        className="ml-[90px]"
+        className="ml-[60px]"
         >
           <button
           className="border border-[white] px-8 py-1 rounded-2xl"
