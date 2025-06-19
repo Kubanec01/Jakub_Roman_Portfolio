@@ -3,13 +3,13 @@ import { FaGithub } from "react-icons/fa";
 
 const HeroSection = () => {
   return (
-    <div className="border border-white w-full h-[900px]">
-      <section className="border border-white mt-[80px] h-[91%] flex justify-center items-center">
+    <div className="w-full h-[820px]">
+      <section className="border border-white mt-[80px] h-full flex justify-center items-center">
         <div className="w-[90%] max-w-[1500px] -mt-18">
-          <h1 className="text-white text-7xl font-medium text-center">
+          <h1 className="text-white text-7xl text-center">
             Hi, I'm Jacob
           </h1>
-          <div className="text-7xl font-medium text-center mt-3 text-[#EF44F2]">
+          <div className="text-7xl text-center mt-3 text-[#EF44F2]">
             Front End Developer
           </div>
           <div className="">
