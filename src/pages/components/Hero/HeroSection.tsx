@@ -94,13 +94,21 @@ const HeroSection = () => {
                 <span className="z-50 ">
                   <FaLinkedin />
                 </span>
-                <a className="z-50 font-medium" href="https://www.linkedin.com/in/jakub-roman-4b1664338/" target="_blank">Linked In</a>
+                <a
+                  className="z-50 font-medium"
+                  href="https://www.linkedin.com/in/jakub-roman-4b1664338/"
+                  target="_blank"
+                >
+                  Linked In
+                </a>
               </button>
-              <button className="border border-[#5e5d5d] text-white text-lg px-4 py-2 rounded-[8px] flex justify-center items-center gap-2">
+              <button className="border border-[#5e5d5d] hover:border-[#ffffff] duration-200 ease-in text-white cursor-pointer text-lg px-4 py-2 rounded-[8px] flex justify-center items-center gap-2">
                 <span>
                   <FaGithub />
                 </span>
-                GitHub
+                <a href="https://github.com/Kubanec01" target="_blank">
+                  GitHub
+                </a>
               </button>
             </div>
           </div>
