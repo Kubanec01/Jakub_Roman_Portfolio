@@ -12,8 +12,8 @@ const DesignerInfoBar = () => {
       style={{
         borderRadius: "2px 14px 2px 2px",
       }}
-      className="w-[50%] h-[310px] border border-[#424040aa] bg-[#141414] p-5 
-         hover:-translate-y-2 ease-in duration-150 hover:shadow-[#555555] shadow-lg/30"
+      className={`w-[50%] h-[310px] border border-[${style.colors.brightGray}] bg-[${style.colors.darkGray}] p-5 
+         hover:-translate-y-2 ease-in duration-150 hover:shadow-[#555555] shadow-lg/30`}
     >
       <div className="text-[#fffffff6] h-[70%] w-full pl-4">
         <h1 className="text-4xl mt-4">{data.designerBar.title}</h1>

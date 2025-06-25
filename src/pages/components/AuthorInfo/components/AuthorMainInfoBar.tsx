@@ -12,7 +12,7 @@ const AuthorMainInfoBar = () => {
       style={{
         borderRadius: "2px 2px 14px 14px",
       }}
-      className="bg-[#141414] border border-[#424040aa] backdrop-opacity-50 mx-auto w-[98.6%] flex justify-between items-center px-5 py-7"
+      className={`bg-[${style.colors.darkGray}] border border-[${style.colors.brightGray}] backdrop-opacity-50 mx-auto w-[98.6%] flex justify-between items-center px-5 py-7`}
     >
       {/* AUTHOR INFO BAR */}
       <div className="w-[32%] h-full flex justify-center items-center p-2">
