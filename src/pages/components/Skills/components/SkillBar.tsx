@@ -20,7 +20,7 @@ const SkillBar = ({ image, name, shadowColor }: SkillBarProps) => {
         boxShadow: `0 0 30px ${isHovered ? `${shadowColor}` : 'transparent'}`,
       }}
       className={`bg-[${style.colors.darkGray}] border border-[${style.colors.brightGray}]
-       rounded-[14px] aspect-square w-[114px] flex justify-center items-center
+       rounded-[14px] aspect-square w-[105px] flex justify-center items-center
        hover:-translate-y-1 duration-[2s] hover:duration-200
        `}
     >

@@ -15,7 +15,7 @@ const SkillsSection = () => {
       <p className={`text-[${style.colors.darkWhite}] text-center text-[22px]`}>
         Frameworks, languages, and tools I rely on
       </p>
-      <div className="mx-auto w-[90%] max-w-[1100px] p-2 mt-[80px]">
+      <div className="mx-auto w-[90%] max-w-[1100px] p-2 mt-[70px]">
         <ul className="flex justify-center items-center w-[94%] mx-auto flex-row gap-8 flex-wrap">
           {data.map((i) => (
             <li>

@@ -12,7 +12,7 @@ const AuthorMainInfoBar = () => {
       style={{
         borderRadius: "2px 2px 14px 14px",
       }}
-      className={`bg-[${style.colors.darkGray}] border border-[${style.colors.brightGray}] backdrop-opacity-50 mx-auto w-[98.6%] flex justify-between items-center px-5 py-7`}
+      className="bg-[#141414] border border-[#424040aa] backdrop-opacity-50 mx-auto w-[98.6%] flex justify-between items-center px-5 py-7"
     >
       {/* AUTHOR INFO BAR */}
       <div className="w-[32%] h-full flex justify-center items-center p-2">
@@ -30,9 +30,7 @@ const AuthorMainInfoBar = () => {
         <h2 className="text-3xl font-semibold text-[#fffffff6] mt-2">
           {data.mainInfoBar.title}
         </h2>
-        <p
-          className={`text-lg font-medium text-[${style.colors.darkWhite}] mt-1 w-[87%]`}
-        >
+        <p className="text-lg font-medium text-[#a9a9a9] mt-1 w-[87%]">
           {data.mainInfoBar.desc}
         </p>
       </div>
