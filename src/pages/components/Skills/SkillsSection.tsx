@@ -38,3 +38,5 @@ const SkillsSection = () => {
 // ! tu treba dorobit to aby kazdy tien mal inu farbu ale nechapem p[reco to nejde...toto bude pronlem]
 
 export default SkillsSection;
+
+// ! ikony by som trochu zmensil
