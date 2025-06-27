@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { customStyles } from "../../../../styles/styles";
 
 export type SkillBarProps = {
   image: string;
@@ -10,16 +9,14 @@ export type SkillBarProps = {
 const SkillBar = ({ image, name, shadowColor }: SkillBarProps) => {
   const [isHovered, setIsHovered] = useState(false);
 
-  const style = customStyles;
-
   return (
     <div
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       style={{
-        boxShadow: `0 0 30px ${isHovered ? `${shadowColor}` : 'transparent'}`,
+        boxShadow: `0 0 30px ${isHovered ? `${shadowColor}` : "transparent"}`,
       }}
-      className={`bg-[${style.colors.darkGray}] border border-[${style.colors.brightGray}]
+      className={`bg-[#141414] border border-[#424040aa]
        rounded-[14px] aspect-square w-[105px] flex justify-center items-center
        hover:-translate-y-1 duration-[2s] hover:duration-200
        `}

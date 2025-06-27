@@ -1,11 +1,9 @@
 import { userInfoData } from "../../../../data/infoBarsData";
-import { customStyles } from "../../../../styles/styles";
 import authorImg2 from "../../../../assets/author-img-2.png";
 
 const AuthorMainInfoBar = () => {
   const data = userInfoData;
 
-  const style = customStyles;
 
   return (
     <div

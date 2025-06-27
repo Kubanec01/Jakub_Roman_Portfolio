@@ -1,12 +1,10 @@
 import { PiBrainThin } from "react-icons/pi";
 
 import { userInfoData } from "../../../../data/infoBarsData";
-import { customStyles } from "../../../../styles//styles";
 
 const DeveloperInfoBar = () => {
   const data = userInfoData;
 
-  const style = customStyles;
 
   return (
     <div

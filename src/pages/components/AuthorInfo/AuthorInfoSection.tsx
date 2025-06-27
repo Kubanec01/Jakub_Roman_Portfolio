@@ -1,11 +1,9 @@
 import DesignerInfoBar from "./components/DesignerInfoBar";
 import DeveloperInfoBar from "./components/DeveloperInfoBar";
 import AuthorMainInfoBar from "./components/AuthorMainInfoBar";
-import { customStyles } from "../../../styles/styles";
 
 const AuthorInfoSection = () => {
 
-  const style = customStyles
 
   return (
     <div className="w-full p-2 border">
@@ -13,7 +11,7 @@ const AuthorInfoSection = () => {
         More Than Just a Portfolio
       </h1>
       <p
-      className={`text-[${style.colors.darkWhite}] text-center text-[22px]`}
+      className={`text-[#a9a9a9] text-center text-[22px]`}
       >
         A Brief Look Into Who I Am
       </p>

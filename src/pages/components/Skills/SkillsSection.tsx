@@ -1,18 +1,15 @@
 import { skillsData } from "../../../data/skillsData";
-import { customStyles } from "../../../styles/styles";
 import SkillBar from "./components/SkillBar";
 
 const SkillsSection = () => {
   const data = skillsData;
-
-  const style = customStyles;
 
   return (
     <section className="w-full mt-[220px] mb-[300px]">
       <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-[#16d0ff] from-[30%] via-[#37ffcaf0] to-[#ffffff] to-[65%] text-center font-medium text-[2.8em] mt-[50px]">
         Technologies I Love Working With
       </h1>
-      <p className={`text-[${style.colors.darkWhite}] text-center text-[22px]`}>
+      <p className={`text-[#a9a9a9] text-center text-[22px]`}>
         Frameworks, languages, and tools I rely on
       </p>
       <div className="mx-auto w-[90%] max-w-[1100px] p-2 mt-[70px]">

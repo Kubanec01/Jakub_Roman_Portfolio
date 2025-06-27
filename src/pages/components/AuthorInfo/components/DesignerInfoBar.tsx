@@ -1,11 +1,9 @@
 import { userInfoData } from "../../../../data/infoBarsData";
 import { IoIosColorFilter } from "react-icons/io";
-import { customStyles } from "../../../../styles/styles";
 
 const DesignerInfoBar = () => {
   const data = userInfoData;
 
-  const style = customStyles;
 
   return (
     <div
