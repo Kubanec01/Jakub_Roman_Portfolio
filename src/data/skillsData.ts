@@ -15,56 +15,56 @@ export const skillsData: SkillBarProps[] = [
   {
     name: "React",
     image: reactImg,
-    neonColor: "#61DAFB", // azúrová
+    shadowColor: "#61dafb90",
   },
   {
     name: "TypeScript",
     image: tsImg,
-    neonColor: "#2B96D9", // modrá TypeScript
+    shadowColor: "#2b96d9e8",
   },
   {
     name: "JavaScript",
     image: jsImg,
-    neonColor: "#F7DF1E", // žltá JavaScript
+    shadowColor: "#f7de1edb",
   },
   {
-    name: "Next.Js",
+    name: "Next.js",
     image: nextImg,
-    neonColor: "#000000", // čierna (typické pre Next.js logo)
+    shadowColor: "#ffffffd2",
   },
   {
     name: "Firebase",
     image: firebaseImg,
-    neonColor: "#FFCA28", // žltá Firebase
+    shadowColor: "#ffc928e0",
   },
   {
     name: "Git",
     image: gitImg,
-    neonColor: "#F05032", // oranžovo-červená Git
+    shadowColor: "#f04e32cb",
   },
   {
     name: "Tailwind",
     image: tailwindImg,
-    neonColor: "#38BDF8", // svetlomodrá Tailwind
+    shadowColor: "#38bff8c1",
   },
   {
     name: "Sass",
     image: sassImg,
-    neonColor: "#CD6799", // ružovo-fialová Sass
+    shadowColor: "#cd6798dc",
   },
   {
     name: "HTML5",
     image: htmlImg,
-    neonColor: "#E34F26", // oranžová HTML5
+    shadowColor: "#e34f26d3",
   },
   {
     name: "Bootstrap",
     image: bootstrapImg,
-    neonColor: "#7952B3", // fialová Bootstrap
+    shadowColor: "#7952b3f2",
   },
   {
     name: "Figma",
     image: figmaImg,
-    neonColor: "#F24E1E", // oranžovo-červená (horný kruh Figma loga)
+    shadowColor: "#f24f1ed5",
   },
 ];

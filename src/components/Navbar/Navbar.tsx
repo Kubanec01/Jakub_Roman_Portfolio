@@ -10,7 +10,7 @@ const Navbar = () => {
       className={`w-[600px] fixed top-4 left-[50%] -translate-x-[50%] z-[1000] ${
         isScreenOnTheTop
           ? "bg-transparent"
-          : "bg-[#181717c8] border border-[#8080802d]"
+          : "bg-[#181717ac] border border-[#8080802d]"
       } backdrop-blur-sm rounded-[40px]`}
     >
       <ul className="max-w-[800px] w-[90%] py-[14px] mx-auto flex justify-center items-center gap-[50px] text-lg">

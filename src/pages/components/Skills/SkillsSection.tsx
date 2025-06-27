@@ -9,7 +9,7 @@ const SkillsSection = () => {
 
   return (
     <section className="w-full mt-[220px] mb-[300px]">
-      <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-[#16d0ff] from-[30%] via-[#37FFC9] to-[#ffffff] to-[65%] text-center font-medium text-[2.8em] mt-[50px]">
+      <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-[#16d0ff] from-[30%] via-[#37ffcaf0] to-[#ffffff] to-[65%] text-center font-medium text-[2.8em] mt-[50px]">
         Technologies I Love Working With
       </h1>
       <p className={`text-[${style.colors.darkWhite}] text-center text-[22px]`}>
@@ -23,7 +23,7 @@ const SkillsSection = () => {
                 key={i.name}
                 image={i.image}
                 name={i.name}
-                neonColor={i.neonColor}
+                shadowColor={i.shadowColor}
               />
             </li>
           ))}
