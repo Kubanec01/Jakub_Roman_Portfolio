@@ -1,7 +1,7 @@
 
 const ProjectsSection = () => {
   return (
-    <div className="border border-white w-full h-[900px] mt-[80px]">
+    <div className="w-full h-[900px] mt-[80px]">
       <h1 className="text-white text-center text-[3.4em] mt-4">
         Digital Creations
       </h1>
