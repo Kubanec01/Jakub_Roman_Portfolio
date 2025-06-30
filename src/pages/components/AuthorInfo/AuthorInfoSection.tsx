@@ -9,7 +9,7 @@ const AuthorInfoSection = () => {
     <section
     id="author-info-section"
     className="w-full p-2 border scroll-m-[40px]">
-      <h1 className="text-center text-[2.9em] font-medium mt-8 bg-gradient-to-r from-[#f86f6f] from-[10%] via-[#e755fa] to-[white] to-[57%] bg-clip-text text-transparent">
+      <h1 className="text-center text-[2.9em] font-medium mt-8 bg-gradient-to-r from-[#f59191] from-[10%] via-[#ea7cf9] to-[white] to-[57%] bg-clip-text text-transparent">
         More Than Just a Portfolio
       </h1>
       <p

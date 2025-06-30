@@ -20,42 +20,42 @@ export const skillsData: SkillBarProps[] = [
   {
     name: "TypeScript",
     image: tsImg,
-    shadowColor: "#2b96d9e8",
+    shadowColor: "#2b96d9af",
   },
   {
     name: "JavaScript",
     image: jsImg,
-    shadowColor: "#f7de1edb",
+    shadowColor: "#f7de1eb4",
   },
   {
     name: "Next.js",
     image: nextImg,
-    shadowColor: "#ffffffd2",
+    shadowColor: "#ffffff9a",
   },
   {
     name: "Firebase",
     image: firebaseImg,
-    shadowColor: "#ffc928e0",
+    shadowColor: "#ffc928bb",
   },
   {
     name: "Git",
     image: gitImg,
-    shadowColor: "#f04e32cb",
+    shadowColor: "#f04e32ae",
   },
   {
     name: "Tailwind",
     image: tailwindImg,
-    shadowColor: "#38bff8c1",
+    shadowColor: "#38bff8a0",
   },
   {
     name: "Sass",
     image: sassImg,
-    shadowColor: "#cd6798dc",
+    shadowColor: "#cd6798bc",
   },
   {
     name: "HTML5",
     image: htmlImg,
-    shadowColor: "#e34f26d3",
+    shadowColor: "#e34f26b6",
   },
   {
     name: "Bootstrap",
@@ -65,6 +65,6 @@ export const skillsData: SkillBarProps[] = [
   {
     name: "Figma",
     image: figmaImg,
-    shadowColor: "#f24f1ed5",
+    shadowColor: "#f24f1ea3",
   },
 ];

@@ -9,7 +9,7 @@ const ProjectsSection = () => {
       id="projects-section"
       className="w-full h-[900px] max-w-[1600px] mt-[260px] mx-auto z-50 scroll-m-[80px]"
     >
-      <h1 className="mt-4 bg-gradient-to-r from-[#6c6cff] from-[32%] via-[#f16a6a] to-[#fdf2f2] to-[62%] bg-clip-text text-transparent text-center text-[2.8em] font-medium">
+      <h1 className="mt-4 bg-gradient-to-r from-[#8888f2] from-[32%] via-[#f58282] to-[#fdf2f2] to-[62%] bg-clip-text text-transparent text-center text-[2.8em] font-medium">
         Explore My Digital Creations
       </h1>
       <p className="text-[#a9a9a9] text-center text-xl text-medium mx-auto w-[360px]">

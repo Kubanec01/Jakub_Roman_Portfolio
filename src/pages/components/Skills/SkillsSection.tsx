@@ -9,7 +9,7 @@ const SkillsSection = () => {
       <section
       id="skills-section"
       className="w-full mt-[220px] px-2 scroll-m-[200px]">
-        <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-[#16d0ff] from-[30%] via-[#37ffcaf0] to-[#ffffff] to-[65%] text-center font-medium text-[2.8em] mt-[50px]">
+        <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-[#5bd6f4] from-[30%] via-[#7ffad9f0] to-[#ffffff] to-[65%] text-center font-medium text-[2.8em] mt-[50px]">
           Technologies I Love Working With
         </h1>
         <p className="text-[#a9a9a9] text-center text-[22px] mt-1">
