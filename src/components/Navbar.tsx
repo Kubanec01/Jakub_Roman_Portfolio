@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useIsScrollOnTheTop } from "../../hooks/useScreenTopPositionValue";
+import { useIsScrollOnTheTop } from "../hooks/useScreenTopPositionValue";
 import { BsThreeDots } from "react-icons/bs";
 
 const Navbar = () => {
@@ -24,7 +24,7 @@ const Navbar = () => {
         <ul className="max-w-[800px] w-[90%] py-[14px] mx-auto flex justify-center items-center gap-[50px] text-lg">
           <li>
             <a
-              href=""
+              href="#author-info-section"
               className="text-[white] hover:text-[#ff5ade] duration-150 ease-in"
             >
               About
@@ -32,7 +32,7 @@ const Navbar = () => {
           </li>
           <li>
             <a
-              href=""
+              href="#skills-section"
               className="text-[white] hover:text-[#ff5ade] duration-150 ease-in"
             >
               Stack
@@ -40,7 +40,7 @@ const Navbar = () => {
           </li>
           <li>
             <a
-              href=""
+              href="#projects-section"
               className="text-[white] hover:text-[#ff5ade] duration-150 ease-in"
             >
               Projects
@@ -81,7 +81,7 @@ const Navbar = () => {
               <li>
                 <a
                   className="text-[#ffffff6a] hover:text-[white] duration-150 ease-in"
-                  href=""
+                  href="#author-info-section"
                 >
                   About
                 </a>
@@ -89,7 +89,7 @@ const Navbar = () => {
               <li>
                 <a
                   className="text-[#ffffff6a] hover:text-[white] duration-150 ease-in"
-                  href=""
+                  href="#skills-section"
                 >
                   Stack
                 </a>
@@ -97,7 +97,7 @@ const Navbar = () => {
               <li>
                 <a
                   className="text-[#ffffff6a] hover:text-[white] duration-150 ease-in"
-                  href=""
+                  href="#projects-section"
                 >
                   Projects
                 </a>

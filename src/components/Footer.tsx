@@ -1,21 +1,28 @@
-import React from "react";
 
 const Footer = () => {
   return (
-    <div>
-      {/* LEFT */}
+    <div className="w-full h-[400px] bg-[#1f1f1f] mt-[120px]">
+      {/* body */}
       <div>
-        {/* tu budu linky na rozne stranky a kontakte veci ako je: */}
-        <ul>
-          <li>{/* mail */}</li>
-          <li>{/* phone */}</li>
-          <li>{/* github */}</li>
-          <li>{/* linked in */}</li>
-        </ul>
-      </div>
-      {/* RIGHT */}
-      <div>
-        {/* tu bude asi notebook na ktorom sa bude premietat to co si uzivatel vyberie alebo tam bude nieco ine, este uvidim */}
+        <section>
+          <h1>{/* title */}</h1>
+          {/* contact icons */}
+          <div>
+            <ul>
+              <li>{/* linked IN */}</li>
+              <li>{/* github */}</li>
+              <li>{/* gmail */}</li>
+              <li>{/* whatsapp */}</li>
+            </ul>
+          </div>
+          {/* gmail and number */}
+          <div>
+            <ul>
+              <li>{/* gmail */}</li>
+              <li>{/* number */}</li>
+            </ul>
+          </div>
+        </section>
       </div>
     </div>
   );
