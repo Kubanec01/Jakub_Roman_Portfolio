@@ -8,7 +8,7 @@ const SkillsSection = () => {
     <>
       <section
       id="skills-section"
-      className="w-full mt-[220px] px-2">
+      className="w-full mt-[220px] px-2 scroll-m-[200px]">
         <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-[#16d0ff] from-[30%] via-[#37ffcaf0] to-[#ffffff] to-[65%] text-center font-medium text-[2.8em] mt-[50px]">
           Technologies I Love Working With
         </h1>

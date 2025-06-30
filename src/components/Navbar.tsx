@@ -49,7 +49,7 @@ const Navbar = () => {
           <li className="ml-[60px]">
             <a
               href=""
-              className="border border-[white] text-white px-8 py-1 rounded-2xl"
+              className="bg-[#3639eb5b] hover:bg-[#3e3eff8f] duration-150 ease-in text-[#ffffff] px-8 py-1 rounded-2xl"
             >
               Contact
             </a>
