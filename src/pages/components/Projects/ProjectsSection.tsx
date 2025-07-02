@@ -18,13 +18,15 @@ const ProjectsSection = () => {
       <section className="w-[90%] h-[600px] mx-auto mt-20">
         <ul className="w-full h-full flex justify-center items-center gap-4">
           {data.map((i) => (
-            <ProjectBar
-              id={i.id}
-              image={i.image}
-              title={i.title}
-              desc={i.desc}
-              pageUrl={i.pageUrl}
-            />
+            <li key={i.id} className="h-full">
+              <ProjectBar
+                id={i.id}
+                image={i.image}
+                title={i.title}
+                desc={i.desc}
+                pageUrl={i.pageUrl}
+              />
+            </li>
           ))}
         </ul>
       </section>

@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 export type SkillBarProps = {
+  id: string;
   image: string;
   name: string;
   shadowColor?: string;

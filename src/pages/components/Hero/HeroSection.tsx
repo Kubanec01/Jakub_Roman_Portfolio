@@ -11,8 +11,9 @@ const HeroSection = () => {
       "
     >
       <section className="relative h-full flex justify-center items-center">
-        <div className="w-[90%] max-w-[1500px] -mt-14 z-50">
-          <h1 className="text-[78px] font text-center bg-gradient-to-b from-[#ffffff] from-30% to-[#707070] bg-clip-text text-transparent">
+        <div
+        className="w-[90%] max-w-[1500px] -mt-14 z-50">
+          <h1 className="text-[78px] font text-center bg-gradient-to-b from-[#ffffff] from-34% to-[#3b3b3b] bg-clip-text text-transparent">
             Hi, I'm Jacob
           </h1>
           <div className="text-7xl text-center -mt-2 text-[#ef44f2]">
@@ -46,7 +47,7 @@ const HeroSection = () => {
                       width: "100%",
                       height: "100%",
                     }}
-                    lazyLoad={undefined}
+                    lazyLoad={false}
                     fov={100}
                     pixelDensity={1}
                     pointerEvents="none"

@@ -9,6 +9,6 @@ export const userInfoData = {
   },
   mainInfoBar: {
     title: "Front-End Developer from Slovakia.",
-    desc: "I’m a junior front-end developer who enjoys building intuitive and visually clear interfaces. I focus on transforming design concepts and features into efficient, maintainable code using modern web technologies. What I enjoy working with: React for its structured approach to building user interfaces and the flexibility that comes with hooks. It helps keep code clean and modular. I typically build projects using Vite — it's fast, reliable, and makes the overall development process much smoother and more efficient.",
+    desc: "I am a junior front-end developer passionate about creating intuitive and visually compelling user interfaces. I specialize in translating design concepts into clean, efficient, and maintainable code by leveraging modern web technologies. My primary focus is React, valued for its component-based architecture and the versatility offered by hooks, which enable modular and scalable development. I prefer using Vite as my build tool due to its speed, reliability, and the streamlined development experience it provides.",
   },
 };

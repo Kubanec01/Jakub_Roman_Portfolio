@@ -23,7 +23,7 @@ export const projectsData: ProjectsData[] = [
     id: "action-cam-store",
     image: actionCamStoreImg,
     title: "Action Cam Store",
-    desc: "A simple application showcasing an engaging gallery of the latest products, information, and accessories for action cameras. The project features an e-commerce cart functionality complemented by a smooth and responsive UI experience.",
+    desc: "A web application showcasing an engaging gallery of the latest products, information, and accessories for action cameras. The project features an e-commerce cart functionality complemented by a smooth and responsive UI experience.",
     pageUrl: "https://kubanec01.github.io/ActionCam-Store/",
   },
   {

@@ -3,13 +3,12 @@ import type { ProjectsData } from "../../../data/projectsData";
 
 interface ProjectBarProps extends ProjectsData {}
 
-const ProjectBar = ({ id, image, title, desc, pageUrl }: ProjectBarProps) => {
+const ProjectBar = ({ image, title, desc, pageUrl }: ProjectBarProps) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <li
+    <div
       onClick={() => window.open(pageUrl)}
-      key={id}
       onMouseEnter={() => setIsHovered((v) => !v)}
       onMouseLeave={() => setIsHovered((v) => !v)}
       style={{
@@ -39,7 +38,7 @@ const ProjectBar = ({ id, image, title, desc, pageUrl }: ProjectBarProps) => {
           <p className="w-[90%] text-[#a9a9a9]">{desc}</p>
         </div>
       </div>
-    </li>
+    </div>
   );
 };
 

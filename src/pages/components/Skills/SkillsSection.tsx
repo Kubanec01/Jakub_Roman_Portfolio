@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import { skillsData } from "../../../data/skillsData";
 import SkillBar from "./components/SkillBar";
 
@@ -7,8 +8,9 @@ const SkillsSection = () => {
   return (
     <>
       <section
-      id="skills-section"
-      className="w-full mt-[220px] px-2 scroll-m-[200px]">
+        id="skills-section"
+        className="w-full mt-[220px] px-2 scroll-m-[200px]"
+      >
         <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-[#5bd6f4] from-[30%] via-[#7ffad9f0] to-[#ffffff] to-[65%] text-center font-medium text-[2.8em] mt-[50px]">
           Technologies I Love Working With
         </h1>
@@ -17,26 +19,39 @@ const SkillsSection = () => {
         </p>
         <div className="mx-auto w-[90%] max-w-[1100px] p-2 mt-[70px]">
           <ul className="flex justify-center items-center w-[94%] mx-auto flex-row gap-8 flex-wrap z-50 relative">
-            {data.map((i) => (
-              <li>
+            {data.map((i, index) => (
+              <motion.li
+                key={i.id}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{
+                  once: true,
+                  amount: 0.9,
+                }}
+                transition={{ duration: 0.4 + index * 0.1 }}
+                variants={{
+                  hidden: { opacity: 0, x: -100 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+              >
                 <SkillBar
-                  key={i.name}
+                  id={i.id}
                   image={i.image}
                   name={i.name}
                   shadowColor={i.shadowColor}
                 />
-              </li>
+              </motion.li>
             ))}
           </ul>
         </div>
       </section>
-      <span 
-      className="absolute top-[1300px] -left-[650px] w-[1200px] h-[1600px]
+      <span
+        className="absolute top-[1300px] -left-[650px] w-[1200px] h-[1600px]
       bg-radial from-[#a41cff36] to-transparent to-70%
       "
       />
-      <span 
-      className="absolute top-[1300px] -right-[650px] w-[1200px] h-[1600px]
+      <span
+        className="absolute top-[1300px] -right-[650px] w-[1200px] h-[1600px]
       bg-radial from-[#4ddeff3b] to-transparent to-70%
       "
       />

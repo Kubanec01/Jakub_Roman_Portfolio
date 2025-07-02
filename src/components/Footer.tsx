@@ -48,7 +48,7 @@ const Footer = () => {
             Thank you for visiting!
           </h1>
           <h2 className="text-[#ffffff9a] text-center text-xl mt-[6px]">
-            You can reach me on:
+            You can <span className="text-[#ffffff]">reach</span> me on:
           </h2>
         </div>
         {/* contact icons */}

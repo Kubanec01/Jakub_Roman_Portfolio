@@ -1,13 +1,24 @@
 import { PiBrainThin } from "react-icons/pi";
 
 import { userInfoData } from "../../../../data/infoBarsData";
+import { motion } from "motion/react";
 
 const DeveloperInfoBar = () => {
   const data = userInfoData;
 
-
   return (
-    <div
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{
+        once: true,
+        amount: 0.5,
+      }}
+      transition={{ duration: 0.7 }}
+      variants={{
+        hidden: { opacity: 0, x: -50 },
+        visible: { opacity: 1, x: 0 },
+      }}
       style={{
         borderRadius: "14px 2px 2px 2px",
       }}
@@ -24,7 +35,7 @@ const DeveloperInfoBar = () => {
           <PiBrainThin />
         </span>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
