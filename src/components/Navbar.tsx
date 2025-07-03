@@ -7,7 +7,6 @@ const Navbar = () => {
 
   const [isOpen, setIsOpen] = useState(false);
 
-  // Testing variable
 
   return (
     <>
@@ -21,7 +20,7 @@ const Navbar = () => {
                     }
             `}
       >
-        <ul className="max-w-[800px] w-[90%] py-[14px] mx-auto flex justify-center items-center gap-[50px] text-lg">
+        <ul className="max-w-[800px] w-[90%] py-[14px] mx-auto flex justify-center items-center lg:gap-[50px] sm:gap-[40px] gap-[20px] lg:text-lg sm:text-base text-xs">
           <li>
             <a
               href="#author-info-section"
@@ -46,10 +45,10 @@ const Navbar = () => {
               Projects
             </a>
           </li>
-          <li className="ml-[60px]">
+          <li className="lg:ml-[60px] sm:ml-[20px] ml-3">
             <a
               href=""
-              className="bg-[#3639eb5b] hover:bg-[#3e3eff8f] duration-150 ease-in text-[#ffffff] px-8 py-1 rounded-2xl"
+              className="bg-[#3639eb5b] hover:bg-[#3e3eff8f] duration-150 ease-in text-[#ffffff] sm:px-8 px-3 py-1 rounded-2xl"
             >
               Contact
             </a>
@@ -115,3 +114,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+// ! tu treba doriesit aby mal v mobile screen navbar viditelny text, nieco tam robi galibu
