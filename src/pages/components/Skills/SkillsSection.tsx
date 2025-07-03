@@ -45,7 +45,7 @@ const SkillsSection = () => {
           </ul>
         </div>
       </section>
-      <span
+      {/* <span
         className="absolute top-[1300px] -left-[650px] w-[1200px] h-[1600px]
       bg-radial from-[#a41cff36] to-transparent to-70%
       "
@@ -54,7 +54,7 @@ const SkillsSection = () => {
         className="absolute top-[1300px] -right-[650px] w-[1200px] h-[1600px]
       bg-radial from-[#4ddeff3b] to-transparent to-70%
       "
-      />
+      /> */}
     </>
   );
 };

@@ -18,15 +18,12 @@ const AuthorMainInfoBar = () => {
         hidden: { opacity: 0, y: 40 },
         visible: { opacity: 100, y: 0 },
       }}
-      style={{
-        borderRadius: "2px 2px 14px 14px",
-      }}
-      className="bg-[#141414] border border-[#424040aa] backdrop-opacity-50 mx-auto w-[98.6%] flex justify-between items-center px-5 py-7"
+      className="bg-[#141414] border border-[#424040aa] rounded-b-[14px] md:rounded-t-[2px] rounded-t-[14px] backdrop-opacity-50 mx-auto w-[98.6%] flex md:flex-row flex-col justify-between items-center sm:px-5 px-3 py-7"
     >
       {/* AUTHOR INFO BAR */}
-      <div className="w-[32%] h-full flex justify-center items-center p-2">
+      <div className="md:pl-6 p-3">
         {/* AUTHOR IMG */}
-        <div className="bg-[#1d1d1d] aspect-square w-[260px] rounded-[20px] object-cover opacity-95">
+        <div className="bg-[#1d1d1d] aspect-square md:w-[260px] rounded-[20px] object-cover opacity-95">
           <img
             className="aspect-square w-[260px] rounded-[20px] object-cover opacity-95"
             src={authorImg2}
@@ -34,12 +31,12 @@ const AuthorMainInfoBar = () => {
           />
         </div>
       </div>
-      <div className=" w-[68%] h-full">
+      <div className=" md:w-[68%] h-full">
         {/* AUTHOR TITLE AND DESC */}
-        <h2 className="text-3xl font-semibold text-[#fffffff6] mt-2">
+        <h1 className="sm:text-3xl text-2xl sm:font-semibold text-[#fffffff6] mt-2 w-[90%] md:mx-0 mx-auto md:text-left text-center">
           {data.mainInfoBar.title}
-        </h2>
-        <p className="text-lg font-medium text-[#a9a9a9] mt-1 w-[87%]">
+        </h1>
+        <p className="lg:text-lg sm:font-medium text-[#a9a9a9] mt-1 lg:w-[87%] sm:w-[96%] md:mx-0 mx-auto md:text-left text-center">
           {data.mainInfoBar.desc}
         </p>
       </div>
