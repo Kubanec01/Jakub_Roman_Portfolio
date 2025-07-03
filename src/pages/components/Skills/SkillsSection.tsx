@@ -11,13 +11,13 @@ const SkillsSection = () => {
         id="skills-section"
         className="w-full mt-[220px] px-2 scroll-m-[200px]"
       >
-        <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-[#5bd6f4] from-[30%] via-[#7ffad9f0] to-[#ffffff] to-[65%] text-center font-medium text-[2.8em] mt-[50px]">
+        <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-[#5bd6f4] from-[30%] via-[#7ffad9f0] to-[#ffffff] to-[65%] text-center font-medium md:text-[2.8em] sm:text-[2.5em] text-3xl sm:w-full w-[80%] mx-auto mt-[50px]">
           Technologies I Love Working With
         </h1>
-        <p className="text-[#a9a9a9] text-center text-[22px] mt-1">
+        <p className="text-[#a9a9a9] text-center sm:text-[22px] text-[19px] mx-auto md:w-full w-[80%] mt-1">
           Frameworks, languages, and tools I rely on
         </p>
-        <div className="mx-auto w-[90%] max-w-[1100px] p-2 mt-[70px]">
+        <div className="mx-auto w-[90%] max-w-[1100px] p-2 xl:mt-[70px] xm:mt-[50px] mt-[30px]">
           <ul className="flex justify-center items-center w-[94%] mx-auto flex-row gap-8 flex-wrap z-50 relative">
             {data.map((i, index) => (
               <motion.li
@@ -45,16 +45,6 @@ const SkillsSection = () => {
           </ul>
         </div>
       </section>
-      {/* <span
-        className="absolute top-[1300px] -left-[650px] w-[1200px] h-[1600px]
-      bg-radial from-[#a41cff36] to-transparent to-70%
-      "
-      />
-      <span
-        className="absolute top-[1300px] -right-[650px] w-[1200px] h-[1600px]
-      bg-radial from-[#4ddeff3b] to-transparent to-70%
-      "
-      /> */}
     </>
   );
 };

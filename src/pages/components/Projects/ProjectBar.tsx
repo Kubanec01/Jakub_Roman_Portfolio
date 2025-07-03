@@ -17,7 +17,7 @@ const ProjectBar = ({ image, title, desc, pageUrl }: ProjectBarProps) => {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       }}
-      className={`border h-full w-[400px] rounded-[14px] overflow-hidden cursor-pointer
+      className={`border 2xl:w-[400px] sm:w-[340px] w-[280px] sm:h-[600px] h-[400px] rounded-[14px] overflow-hidden cursor-pointer relative
               ${
                 isHovered
                   ? "grayscale-0 duration-200 ease-in border-[#b6b4b4bd] -translate-y-2 shadow-xl shadow-[#ffffff58]/25"
@@ -33,13 +33,21 @@ const ProjectBar = ({ image, title, desc, pageUrl }: ProjectBarProps) => {
                   : "opacity-0 duration-200 ease-out"
               }`}
       >
-        <div className="w-full p-3 pl-6 mb-[50px]">
-          <h1 className="text-2xl text-[white]">{title}</h1>
-          <p className="w-[90%] text-[#a9a9a9]">{desc}</p>
+        <div className="w-full p-3 pl-6 sm:mb-[50px] mb-[30px]">
+          <h1 className="sm:text-2xl text-lg text-[white]">{title}</h1>
+          <p className="w-[90%] text-[#a9a9a9] sm:text-base text-sm">{desc}</p>
         </div>
+          {/* <button
+          className="text-white absolute right-3 bottom-4"
+          >
+            See Moe
+          </button> */}
       </div>
     </div>
   );
 };
 
 export default ProjectBar;
+
+// ! tu treba dorobit funkcionalitu vdaka ktorej sa deaktivuje hover p-ri mobile screen, to asi spravit og lg screen wodht a bude mozne prejst na stranku len pomocou See More buttonu ktory je momentalne deaktivovany
+// ! na to bude treba spravit custom hook ktory meria sirku stranky

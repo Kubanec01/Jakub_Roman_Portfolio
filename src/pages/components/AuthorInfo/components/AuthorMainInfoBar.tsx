@@ -25,7 +25,7 @@ const AuthorMainInfoBar = () => {
         {/* AUTHOR IMG */}
         <div className="bg-[#1d1d1d] aspect-square md:w-[260px] rounded-[20px] object-cover opacity-95">
           <img
-            className="aspect-square w-[260px] rounded-[20px] object-cover opacity-95"
+            className="aspect-square md:w-[260px] sm:w-[230px] w-[200px] rounded-[20px] object-cover opacity-95"
             src={authorImg2}
             alt="author-img"
           />
@@ -33,7 +33,7 @@ const AuthorMainInfoBar = () => {
       </div>
       <div className=" md:w-[68%] h-full">
         {/* AUTHOR TITLE AND DESC */}
-        <h1 className="sm:text-3xl text-2xl sm:font-semibold text-[#fffffff6] mt-2 w-[90%] md:mx-0 mx-auto md:text-left text-center">
+        <h1 className="sm:text-3xl text-2xl sm:font-semibold text-[#fffffff6] mt-2 md:w-[90%] md:mx-0 mx-auto md:text-left text-center">
           {data.mainInfoBar.title}
         </h1>
         <p className="lg:text-lg sm:font-medium text-[#a9a9a9] mt-1 lg:w-[87%] sm:w-[96%] md:mx-0 mx-auto md:text-left text-center">
