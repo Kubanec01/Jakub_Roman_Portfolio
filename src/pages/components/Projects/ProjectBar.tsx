@@ -1,14 +1,23 @@
 import { useState } from "react";
 import type { ProjectsData } from "../../../data/projectsData";
+import useInnerWidthValue from "../../../hooks/useInnerWidthValue";
 
 interface ProjectBarProps extends ProjectsData {}
 
 const ProjectBar = ({ image, title, desc, pageUrl }: ProjectBarProps) => {
   const [isHovered, setIsHovered] = useState(false);
 
+  const innerWidthValue = useInnerWidthValue();
+
+  const openPage = (url: string) => {
+    if (innerWidthValue > 1024) window.open(url);
+
+    return;
+  };
+
   return (
     <div
-      onClick={() => window.open(pageUrl)}
+      onClick={() => openPage(pageUrl)}
       onMouseEnter={() => setIsHovered((v) => !v)}
       onMouseLeave={() => setIsHovered((v) => !v)}
       style={{
@@ -17,7 +26,7 @@ const ProjectBar = ({ image, title, desc, pageUrl }: ProjectBarProps) => {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       }}
-      className={`border 2xl:w-[400px] sm:w-[340px] w-[280px] sm:h-[600px] h-[400px] rounded-[14px] overflow-hidden cursor-pointer relative
+      className={`border 2xl:w-[400px] sm:w-[340px] w-[260px] sm:h-[600px] h-[400px] rounded-[14px] overflow-hidden cursor-pointer relative
               ${
                 isHovered
                   ? "grayscale-0 duration-200 ease-in border-[#b6b4b4bd] -translate-y-2 shadow-xl shadow-[#ffffff58]/25"
@@ -33,21 +42,21 @@ const ProjectBar = ({ image, title, desc, pageUrl }: ProjectBarProps) => {
                   : "opacity-0 duration-200 ease-out"
               }`}
       >
-        <div className="w-full p-3 pl-6 sm:mb-[50px] mb-[30px]">
+        <div className="w-full p-3 pl-6 sm:mb-[50px] mb-[40px]">
           <h1 className="sm:text-2xl text-lg text-[white]">{title}</h1>
           <p className="w-[90%] text-[#a9a9a9] sm:text-base text-sm">{desc}</p>
         </div>
-          {/* <button
-          className="text-white absolute right-3 bottom-4"
+        {innerWidthValue < 1024 && (
+          <button
+            onClick={() => window.open(pageUrl)}
+            className="text-white absolute sm:text-base text-sm right-4 bottom-4"
           >
-            See Moe
-          </button> */}
+            See More
+          </button>
+        )}
       </div>
     </div>
   );
 };
 
 export default ProjectBar;
-
-// ! tu treba dorobit funkcionalitu vdaka ktorej sa deaktivuje hover p-ri mobile screen, to asi spravit og lg screen wodht a bude mozne prejst na stranku len pomocou See More buttonu ktory je momentalne deaktivovany
-// ! na to bude treba spravit custom hook ktory meria sirku stranky

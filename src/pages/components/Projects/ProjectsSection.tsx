@@ -1,6 +1,8 @@
 import { projectsData } from "../../../data/projectsData";
 import ProjectBar from "./ProjectBar";
 
+
+
 const ProjectsSection = () => {
   const data = projectsData;
 
@@ -16,7 +18,7 @@ const ProjectsSection = () => {
         A selection of my main projects you can explore right away.
       </p>
       <section className="w-full px-2 mx-auto sm:mt-20 mt-14">
-        <ul className="w-full h-full flex flex-wrap justify-center items-center gap-4">
+        <ul className="w-full h-full flex flex-wrap justify-center items-center sm:gap-4 gap-8">
           {data.map((i) => (
             <li key={i.id} className="h-full">
               <ProjectBar
