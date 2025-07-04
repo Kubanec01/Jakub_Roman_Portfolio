@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { useIsScrollOnTheTop } from "../hooks/useScreenTopPositionValue";
 import { BsThreeDots } from "react-icons/bs";
+import { motion } from "motion/react";
 
 const Navbar = () => {
   const isScreenOnTheTop = useIsScrollOnTheTop();
 
   const [isOpen, setIsOpen] = useState(false);
-
 
   return (
     <>
@@ -74,12 +74,19 @@ const Navbar = () => {
       >
         <div className="w-full h-full flex justify-center items-center">
           {isOpen ? (
-            <ul
-              className={`w-full px-[38px] h-full mx-auto opacity-0 hover:opacity-100 duration-[0.9s] flex justify-between items-center`}
+            <motion.ul
+              initial="hidden"
+              whileInView="visible"
+              transition={{ duration: 0.4 }}
+              variants={{
+                hidden: { opacity: 0 },
+                visible: { opacity: 1 },
+              }}
+              className="w-full px-[38px] h-full mx-auto flex justify-between items-center lg:text-[#ffffff6a] text-[white]"
             >
               <li>
                 <a
-                  className="text-[#ffffff6a] hover:text-[white] duration-150 ease-in"
+                  className="hover:text-[white] duration-150 ease-in"
                   href="#author-info-section"
                 >
                   About
@@ -87,7 +94,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  className="text-[#ffffff6a] hover:text-[white] duration-150 ease-in"
+                  className="hover:text-[white] duration-150 ease-in"
                   href="#skills-section"
                 >
                   Stack
@@ -95,13 +102,13 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  className="text-[#ffffff6a] hover:text-[white] duration-150 ease-in"
+                  className="hover:text-[white] duration-150 ease-in"
                   href="#projects-section"
                 >
                   Projects
                 </a>
               </li>
-            </ul>
+            </motion.ul>
           ) : (
             <span className="text-[#ffffffd9] text-[25px] text-center">
               <BsThreeDots />
@@ -115,5 +122,4 @@ const Navbar = () => {
 
 export default Navbar;
 
-
-// ! tu treba doriesit aby mal v mobile screen navbar viditelny text, nieco tam robi galibu
+// opacity-0 hover:opacity-100 duration-[0.9s]

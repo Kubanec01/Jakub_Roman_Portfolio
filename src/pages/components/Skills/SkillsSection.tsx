@@ -50,3 +50,5 @@ const SkillsSection = () => {
 };
 
 export default SkillsSection;
+
+//! tu nejako treba poriesit ten background aby tam boli gradienty, pre lepsi vizualny efekt
