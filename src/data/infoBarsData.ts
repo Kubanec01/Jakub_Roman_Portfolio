@@ -1,14 +1,14 @@
 export const userInfoData = {
   developerBar: {
     title: "Developer",
-    desc: "I have a passion for creating clean, responsive websites with unique designs and engaging functionality. I transform ideas into smooth digital experiences, turning websites into works of art.",
+    desc: "I focus on writing clean, well-structured code with attention to performance, scalability, and maintainability. My goal is to build solutions that are efficient, reliable, and easy to extend.",
   },
   designerBar: {
     title: "UX/UI Designer",
-    desc: "I’m passionate about creating user-friendly designs that focus on intuitive navigation and understanding user needs, using every project to enhance meaningful digital experiences.",
+    desc: "I’m dedicated to creating user-friendly designs that focus on intuitive navigation and understanding user needs, using every project to enhance meaningful digital experiences.",
   },
   mainInfoBar: {
     title: "Front-End Developer from Slovakia.",
-    desc: "I am a junior front-end developer passionate about creating intuitive and visually compelling user interfaces. I specialize in translating design concepts into clean, efficient, and maintainable code by leveraging modern web technologies. My primary focus is React, valued for its component-based architecture and the versatility offered by hooks, which enable modular and scalable development. I prefer using Vite as my build tool due to its speed, reliability, and the streamlined development experience it provides.",
+    desc: "I am a front-end developer with a focus on crafting clear, intuitive, and visually thoughtful user interfaces. I like turning design ideas into clean, efficient code that’s easy to maintain and use. I work mainly with TypeScript and React, drawn to their structure and flexibility. I’m always open to exploring new tools and ways of working. Let’s create something great together.",
   },
 };

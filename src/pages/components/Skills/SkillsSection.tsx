@@ -9,7 +9,7 @@ const SkillsSection = () => {
     <>
       <section
         id="skills-section"
-        className="w-full mt-[220px] px-2 scroll-m-[200px]"
+        className="w-full max-w-[1900px] mx-auto mt-[220px] px-2 scroll-m-[200px] relative"
       >
         <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-[#5bd6f4] from-[30%] via-[#7ffad9f0] to-[#ffffff] to-[65%] text-center font-medium md:text-[2.8em] sm:text-[2.5em] text-3xl sm:w-full w-[80%] mx-auto mt-[50px]">
           Technologies I Love Working With
@@ -44,6 +44,8 @@ const SkillsSection = () => {
             ))}
           </ul>
         </div>
+        <span className="aspect-square w-[1500px] absolute -left-[240px] -top-[600px] bg-radial from-[#c906ff2a] to-transparent to-[50%] -z-50" />
+        <span className="aspect-square w-[1200px] absolute right-[10px] -top-[120px] bg-radial from-[#1bc1d42e] to-transparent to-[50%] -z-50" />
       </section>
     </>
   );
