@@ -62,8 +62,8 @@ const Navbar = () => {
         className={`z-[1000] border border-[#ffffff29] fixed top-[20px] left-[50%] -translate-x-[50%] rounded-[30px] backdrop-blur-[20px] bg-[#29292969]
         flex justify-center items-center ${
           isOpen
-            ? "duration-[0.25s] ease-in w-[360px] h-[52px]"
-            : "w-[60px] h-[52px] duration-[0.2s] ease-in "
+            ? "duration-[0.25s] ease-in md:w-[360px] w-[280px] md:h-[52px] h-[44px]"
+            : "md:w-[60px] w-[45px] md:h-[52px] h-[44px] duration-[0.2s] ease-in "
         }
         ${
           isScreenOnTheTop
@@ -82,7 +82,7 @@ const Navbar = () => {
                 hidden: { opacity: 0 },
                 visible: { opacity: 1 },
               }}
-              className="w-full px-[38px] h-full mx-auto flex justify-between items-center lg:text-[#ffffff6a] text-[white]"
+              className="w-full px-[38px] h-full mx-auto flex justify-between items-center lg:text-[#ffffff6a] text-[white] md:text-base text-sm"
             >
               <li>
                 <a
@@ -110,7 +110,7 @@ const Navbar = () => {
               </li>
             </motion.ul>
           ) : (
-            <span className="text-[#ffffffd9] text-[25px] text-center">
+            <span className="text-[#ffffffd9] md:text-[25px] text-[20px] text-center mx-auto">
               <BsThreeDots />
             </span>
           )}

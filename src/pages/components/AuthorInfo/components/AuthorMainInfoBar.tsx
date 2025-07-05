@@ -18,7 +18,7 @@ const AuthorMainInfoBar = () => {
         hidden: { opacity: 0, y: 40 },
         visible: { opacity: 100, y: 0 },
       }}
-      className="bg-[#141414] border border-[#424040aa] rounded-b-[14px] md:rounded-t-[2px] rounded-t-[14px] backdrop-opacity-50 mx-auto w-[98.6%] flex md:flex-row flex-col justify-between items-center sm:px-5 px-3 py-7"
+      className="bg-[#141414] border border-[#424040aa] rounded-b-[14px] md:rounded-t-[2px] rounded-t-[14px] backdrop-opacity-50 mx-auto sm:w-[98.6%] w-[96%] flex md:flex-row flex-col justify-between items-center sm:px-5 px-3 py-7"
     >
       {/* AUTHOR INFO BAR */}
       <div className="md:pl-6 p-3">
