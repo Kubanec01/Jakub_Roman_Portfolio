@@ -45,7 +45,7 @@ const SkillsSection = () => {
           </ul>
         </div>
         <span className="aspect-square w-[1500px] absolute -left-[240px] -top-[600px] bg-radial from-[#c906ff2a] to-transparent to-[50%] -z-50" />
-        <span className="aspect-square w-[1200px] absolute right-[10px] -top-[120px] bg-radial from-[#1bc1d42e] to-transparent to-[50%] -z-50" />
+        <span className="aspect-square w-[1200px] absolute right-[10px] -top-[180px] bg-radial from-[#1bc1d42e] to-transparent to-[50%] -z-50" />
       </section>
     </>
   );
