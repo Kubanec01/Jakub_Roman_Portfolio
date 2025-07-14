@@ -26,11 +26,18 @@ const ProjectBar = ({ image, title, desc, pageUrl }: ProjectBarProps) => {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       }}
-      className={`border 2xl:w-[400px] sm:w-[340px] w-[260px] sm:h-[600px] h-[400px] rounded-[14px] overflow-hidden cursor-pointer relative
+      className={`border 2xl:w-[400px] sm:w-[340px] w-[260px] sm:h-[600px] h-[400px] rounded-[14px] overflow-hidden relative
               ${
                 isHovered
                   ? "grayscale-0 duration-200 ease-in border-[#b6b4b4bd] -translate-y-2 shadow-xl shadow-[#ffffff58]/25"
                   : "grayscale-100 duration-200 ease-out border-[#6a6969a2]"
+              }
+              ${
+                innerWidthValue < 1024 
+                ?
+                "cursor-auto"
+                :
+                "cursor-pointer"
               }
               `}
     >
@@ -49,7 +56,7 @@ const ProjectBar = ({ image, title, desc, pageUrl }: ProjectBarProps) => {
         {innerWidthValue < 1024 && (
           <button
             onClick={() => window.open(pageUrl)}
-            className="text-white absolute sm:text-base text-sm right-4 bottom-4"
+            className="text-white absolute sm:text-base text-sm right-4 bottom-4 cursor-pointer"
           >
             See More
           </button>
