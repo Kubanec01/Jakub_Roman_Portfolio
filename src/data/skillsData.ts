@@ -1,7 +1,6 @@
 import type { SkillBarProps } from "../pages/components/Skills/components/SkillBar";
 import reactImg from "../assets/React.png";
 import tsImg from "../assets/TypeScript.png";
-import nextImg from "../assets/Next.js.png";
 import jsImg from "../assets//JavaScript.png";
 import firebaseImg from "../assets//Firebase.png";
 import gitImg from "../assets//Git.png";
@@ -30,12 +29,6 @@ export const skillsData: SkillBarProps[] = [
     name: "JavaScript",
     image: jsImg,
     shadowColor: "#f7de1eb4",
-  },
-  {
-    id: "nextJs",
-    name: "Next.js",
-    image: nextImg,
-    shadowColor: "#ffffff9a",
   },
   {
     id: "firebase",
