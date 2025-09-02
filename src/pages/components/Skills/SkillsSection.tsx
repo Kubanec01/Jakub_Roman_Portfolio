@@ -25,8 +25,8 @@ const SkillsSection = () => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{
-                  once: true,
-                  amount: 0.9,
+                  once: false,
+                  amount: 0.2,
                 }}
                 transition={{ duration: 0.4 + index * 0.1 }}
                 variants={{

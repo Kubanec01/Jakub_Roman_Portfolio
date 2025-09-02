@@ -20,7 +20,7 @@ const Navbar = () => {
                     }
             `}
       >
-        <ul className="max-w-[800px] w-[90%] py-[14px] mx-auto flex justify-center items-center lg:gap-[50px] sm:gap-[40px] gap-[20px] lg:text-lg sm:text-base text-xs">
+        <ul className="max-w-[800px] w-[90%] py-[14px] mx-auto flex justify-center items-center lg:gap-[50px] sm:gap-[40px] gap-[20px] lg:text-lg sm:text-base text-sm">
           <li>
             <a
               href="#author-info-section"
