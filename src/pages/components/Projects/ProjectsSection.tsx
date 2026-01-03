@@ -1,7 +1,6 @@
-import {type ProjectsData, projectsData} from "../../../data/projectsData";
+import {type ProjectsData, projectsData, projectsInProgress} from "../../../data/projectsData";
 import ProjectBar from "./components/ProjectBar.tsx";
 import ProjectInProgressBar from "./components/ProjectInProgressBar.tsx";
-import {projectsInProgress} from "../../../data/projectsInProgress";
 
 
 const ProjectsSection = () => {

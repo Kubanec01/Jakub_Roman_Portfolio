@@ -2,6 +2,7 @@ import moneySaverImg from "../assets/Money-Saver-img.png";
 import actionCamStoreImg from "../assets/Action-Camera-Store-img.png";
 import residentEvilWikiImg from "../assets/Resident-Evil-img.png";
 import artGalleyFestivalImg from "../assets/Art-Gallery-Img.png";
+import workTrackerImg from "../assets/work-_tracker_img.png";
 
 export interface ProjectsData {
     id: string;
@@ -41,3 +42,13 @@ export const projectsData: ProjectsData[] = [
         pageUrl: "https://kubanec01.github.io/Art_Gallery_Festival/",
     },
 ];
+
+export const projectsInProgress: ProjectsData[] = [
+    {
+        id: "work-tracker",
+        image: workTrackerImg,
+        title: "Work Tracker",
+        desc: "Time-Counter is a web application designed for time tracking and activity management for both individuals and teams. Users can measure and log their working time or join a shared project (workspace), where access and permissions are managed through user roles.",
+        pageUrl: "https://github.com/Kubanec01/Time-Counter",
+    },
+]
