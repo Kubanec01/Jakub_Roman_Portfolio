@@ -1,14 +1,14 @@
 export const userInfoData = {
-  developerBar: {
-    title: "Developer",
-    desc: "I focus on writing clean, well-structured code with attention to performance, scalability, and maintainability. My goal is to build solutions that are efficient, reliable, and easy to extend.",
-  },
-  designerBar: {
-    title: "UX/UI Designer",
-    desc: "I’m dedicated to creating user-friendly designs that focus on intuitive navigation and understanding user needs, using every project to enhance meaningful digital experiences.",
-  },
-  mainInfoBar: {
-    title: "Front-End Developer from Slovakia.",
-    desc: "I am a front-end developer with a focus on crafting clear, intuitive, and visually thoughtful user interfaces. I like turning design ideas into clean, efficient code that’s easy to maintain and use. I work mainly with TypeScript and React, drawn to their structure and flexibility. I’m always open to exploring new tools and ways of working. Let’s create something great together.",
-  },
+    developerBar: {
+        title: "Developer",
+        desc: "I focus on writing clean and maintainable frontend code with a clear, readable structure and attention to performance. My goal is to build reliable solutions that are easy to extend over time.",
+    },
+    designerBar: {
+        title: "UX/UI Designer",
+        desc: "I focus on creating clear, user-friendly interfaces with thoughtful color choices and intuitive interaction, paying close attention to detail and adding a subtle creative signature.",
+    },
+    mainInfoBar: {
+        title: "Front-End Developer from Slovakia.",
+        desc: "I am a front-end developer focused on crafting clear, intuitive, and visually thoughtful user interfaces. I enjoy turning design ideas into clean, efficient code that’s easy to maintain and use. I primarily work with TypeScript and React and enjoy exploring new tools and approaches.",
+    },
 };
