@@ -1,7 +1,7 @@
-import {projectsData} from "../../../data/projectsData";
+import {type ProjectsData, projectsData} from "../../../data/projectsData";
 import ProjectBar from "./components/ProjectBar.tsx";
-import {projectsInProgressData} from "../../../data/projectsInProgress.ts";
 import ProjectInProgressBar from "./components/ProjectInProgressBar.tsx";
+import {projectsInProgress} from "../../../data/projectsInProgress.ts";
 
 
 const ProjectsSection = () => {
@@ -18,7 +18,7 @@ const ProjectsSection = () => {
             </p>
             <section className="w-full px-2 mx-auto sm:mt-20 mt-14">
                 <ul className="w-full h-full flex flex-wrap justify-center items-center sm:gap-4 gap-8">
-                    {projectsInProgressData.map((project) => (
+                    {projectsInProgress.map((project: ProjectsData) => (
                         <li
                             key={project.id} className={"h-full"}>
                             <ProjectInProgressBar
@@ -30,7 +30,7 @@ const ProjectsSection = () => {
                             />
                         </li>
                     ))}
-                    {projectsData.map((i) => (
+                    {projectsData.map((i: ProjectsData) => (
                         <li key={i.id} className="h-full">
                             <ProjectBar
                                 id={i.id}
