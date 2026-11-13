@@ -17,9 +17,9 @@ const AuthorInfoSection = () => {
       >
         A Brief Look Into Who I Am
       </p>
-      <section className=" mx-auto w-[90%] max-w-[1100px] mt-14">
+      <section className="mx-auto w-[90%] max-w-[1100px] mt-14">
         {/* POSITIONS INFO BARS */}
-        <div className="p-2 flex md:flex-row flex-col justify-between items-center gap-2">
+        <div className="p-2 flex md:flex-row flex-col justify-between items-center gap-x-2 gap-y-3">
           <DeveloperInfoBar />
           <DesignerInfoBar />
         </div>

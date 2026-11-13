@@ -1,12 +1,23 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useIsScrollOnTheTop } from "../hooks/useScreenTopPositionValue";
 import { BsThreeDots } from "react-icons/bs";
 import { motion } from "motion/react";
+import useInnerWidthValue from "../hooks/useInnerWidthValue";
 
 const Navbar = () => {
   const isScreenOnTheTop = useIsScrollOnTheTop();
-
+  const windowWidth = useInnerWidthValue();
   const [isOpen, setIsOpen] = useState(false);
+
+  const isMobileScreen = windowWidth <= 1024;
+
+  useEffect(() => {
+    if (isMobileScreen && !isOpen) setIsOpen(true);
+  }, [isOpen, isMobileScreen]);
+
+  const handleMouseHoverAction = (isOpen: boolean) => {
+    if (!isMobileScreen) setIsOpen(isOpen);
+  };
 
   return (
     <>
@@ -57,8 +68,8 @@ const Navbar = () => {
       </div>
       {/* MINI MENU */}
       <div
-        onMouseEnter={() => setIsOpen((v) => !v)}
-        onMouseLeave={() => setIsOpen((v) => !v)}
+        onMouseEnter={() => handleMouseHoverAction(true)}
+        onMouseLeave={() => handleMouseHoverAction(false)}
         className={`z-[1000] border border-[#ffffff29] fixed top-[20px] left-[50%] -translate-x-[50%] rounded-[30px] backdrop-blur-[20px] bg-[#29292969]
         flex justify-center items-center ${
           isOpen
